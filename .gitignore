@@ -1,0 +1,24 @@
+# ignore the Si4010 example folders
+/firmware/*
+# but keep our code
+!/firmware/hekapoo
+# and skip build artifacts
+/firmware/hekapoo/out/*
+
+# keep the common folder
+!/firmware/common
+# but none of its contents
+/firmware/common/*
+# except for a README explaining what should be there
+!/firmware/common/README.md
+
+# keep placeholders
+!**/.gitkeep
+
+# drop common garbage files
+*.swp
+*.hex
+*.out
+*.LST
+*.#*
+*.OBJ
